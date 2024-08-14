@@ -11,12 +11,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="TestClicked"
-        android:text="Click Me" />
+        android:text="Click Me"
+        android:visibility="visible" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
         android:visibility="invisible"
-        android:text="Hi Android" />
+        tools:text="@string/app_name" />
 </LinearLayout>
