@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">OKgpt</string>
+    <string name="inputField">Enter prompt</string>
 </resources>

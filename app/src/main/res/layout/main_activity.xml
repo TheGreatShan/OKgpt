@@ -4,6 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat"
     tools:context=".MainActivity">
 
     <Button
@@ -14,14 +15,18 @@
         android:text="Click Me"
         android:visibility="visible" />
 
-    <TextView
-        android:id="@+id/textView"
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textColor="#000000"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        android:visibility="invisible"
-        tools:text="@string/app_name" />
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/promptInput"
+            android:layout_width="match_parent"
+            android:height="48dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/inputField"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
 </LinearLayout>
